@@ -14,7 +14,7 @@ pipeline {
     }
     stage('foo') {
       steps {
-        tool 'zlib'
+        tool 'Exiv2'
         sh 'ls'
       }
     }
