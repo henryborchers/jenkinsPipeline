@@ -9,7 +9,6 @@ pipeline {
     stage('Hello') {
       steps {
         echo 'Hello world'
-        sh 'whoami'
         sh 'python --version'
       }
     }
