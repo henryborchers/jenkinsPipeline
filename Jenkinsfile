@@ -12,5 +12,10 @@ pipeline {
         sh 'python --version'
       }
     }
+    stage('foo') {
+      steps {
+        tool 'Exiv2'
+      }
+    }
   }
 }
