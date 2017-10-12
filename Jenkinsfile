@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'Hello world'
         sh 'whoami'
-        sh 'groups'
+        sh 'python --version'
       }
     }
   }
