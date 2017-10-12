@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'python'
+    }
+    
+  }
   stages {
     stage('Hello') {
       steps {
@@ -11,7 +16,6 @@ pipeline {
       steps {
         tool 'Exiv2'
         sh 'ls'
-        sh 'exiv2 --help'
       }
     }
   }
