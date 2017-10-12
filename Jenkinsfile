@@ -11,6 +11,7 @@ pipeline {
       steps {
         tool 'Exiv2'
         sh 'ls'
+        sh 'exiv2 --help'
       }
     }
   }
