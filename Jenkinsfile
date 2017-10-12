@@ -15,7 +15,8 @@ pipeline {
     stage('foo') {
       steps {
         tool 'Exiv2'
-        sh 'ls'
+        sh '''ls
+exiv2 --version'''
       }
     }
   }
