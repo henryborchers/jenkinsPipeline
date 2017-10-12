@@ -17,6 +17,7 @@ pipeline {
         tool 'Exiv2'
         sh '''ls
 echo $PATH'''
+        sh 'which exiv2'
       }
     }
   }
