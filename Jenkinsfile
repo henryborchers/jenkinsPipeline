@@ -1,14 +1,10 @@
 pipeline {
-  agent {
-    docker {
-      image ' python'
-    }
-    
-  }
+  agent any
   stages {
     stage('Hello') {
       steps {
         echo 'Hello world'
+        sh 'whoami'
       }
     }
   }
