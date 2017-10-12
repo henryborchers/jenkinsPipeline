@@ -4,7 +4,8 @@ pipeline {
     stage('Hello') {
       steps {
         echo 'Hello world'
-        sh 'whoami'
+        sh '''whoami
+groups'''
       }
     }
   }
