@@ -16,7 +16,7 @@ pipeline {
       steps {
         tool 'Exiv2'
         sh '''ls
-exiv2 --version'''
+echo $PATH'''
       }
     }
   }
