@@ -1,10 +1,9 @@
 pipeline {
   agent {
-    docker {
-      image 'python'
-    }
-    
+  dockerfile {
+    filename 'Dockerfile'
   }
+}
   stages {
     stage('Hello') {
       steps {
