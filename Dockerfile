@@ -38,4 +38,5 @@ RUN apt-get update -y && apt install -y \
     libxinerama-dev \
     libgstreamer1.0-dev \
     ninja-build \
-    zlib1g-dev
+    zlib1g-dev \
+    python
