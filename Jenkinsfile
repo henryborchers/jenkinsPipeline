@@ -1,9 +1,9 @@
 pipeline {
   agent {
-  dockerfile {
-    filename 'Dockerfile'
+    dockerfile {
+        filename 'Dockerfile'
+      }
   }
-}
   stages {
     stage('Hello') {
       steps {
@@ -11,11 +11,11 @@ pipeline {
         sh 'python3 --version | tee pythonversion.txt'
       }
     }
-    post{
+  }
+  post{
         success{
             archiveArtifacts 'pythonversion.txt'
 
         }
     }
-  }
 }
