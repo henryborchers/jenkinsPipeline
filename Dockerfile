@@ -39,4 +39,4 @@ RUN apt-get update -y && apt install -y \
     libgstreamer1.0-dev \
     ninja-build \
     zlib1g-dev \
-    python
+    python3
