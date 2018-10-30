@@ -18,7 +18,7 @@ pipeline {
 
         }
         cleanup{
-            sh "rm pythonversion.txt"
+            cleanWs(patterns: [[pattern: 'pythonversion.txt', type: 'INCLUDE']])
         }
     }
 }
