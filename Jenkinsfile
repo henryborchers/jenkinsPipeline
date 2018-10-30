@@ -17,5 +17,8 @@ pipeline {
             archiveArtifacts 'pythonversion.txt'
 
         }
+        cleanup{
+            sh "rm pythonversion.txt"
+        }
     }
 }
