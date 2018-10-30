@@ -8,7 +8,7 @@ pipeline {
     stage('Hello') {
       steps {
         echo 'Hello world'
-        sh 'python --version | tee pythonversion.txt'
+        sh 'python3 --version | tee pythonversion.txt'
       }
     }
     post{
