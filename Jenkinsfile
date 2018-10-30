@@ -11,5 +11,11 @@ pipeline {
         sh 'python --version | tee pythonversion.txt'
       }
     }
+    post{
+        success{
+            archiveArtifacts 'pythonversion.txt'
+
+        }
+    }
   }
 }
